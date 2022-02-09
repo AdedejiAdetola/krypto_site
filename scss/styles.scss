@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.header {
+    height: 90vh;
+    width:100%;
+    background-image: linear-gradient(to top right, red, yellow, green);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 83%, 0 100%);
+}
+
+.first-section{
+    background-color: #F0F0F0;
+    height:90vh;
+    position: relative;
+    top: -117px;
+    clip-path: polygon(0 17%, 50% 0, 100% 17%, 100% 100%, 0% 100%);
+}

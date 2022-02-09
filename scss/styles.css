@@ -1,1 +1,23 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 90vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(red), color-stop(yellow), to(green));
+  background-image: linear-gradient(to top right, red, yellow, green);
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 83%, 0 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 50% 83%, 0 100%);
+}
+
+.first-section {
+  background-color: #F0F0F0;
+  height: 90vh;
+  position: relative;
+  top: -117px;
+  -webkit-clip-path: polygon(0 17%, 50% 0, 100% 17%, 100% 100%, 0% 100%);
+          clip-path: polygon(0 17%, 50% 0, 100% 17%, 100% 100%, 0% 100%);
+}
+/*# sourceMappingURL=styles.css.map */
