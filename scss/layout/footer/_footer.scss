@@ -11,7 +11,7 @@
         padding: 20px 0;
 
         .ft__flex--1, .ft__flex--2{
-            button{
+            .button{
                 @include button;
             }
         }
