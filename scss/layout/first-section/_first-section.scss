@@ -1,0 +1,37 @@
+.first-section{
+    position: relative;
+    top: -175px;
+    clip-path: polygon(0 17%, 50% 0, 100% 17%, 100% 100%, 0% 100%);
+    //border:1px solid rgb(0, 255, 242);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    div {
+        color:$black;
+        margin-top: 200px;
+    }
+
+    .fs-img{
+        width:400px;
+        height:400px;
+        border:2px solid red;
+    }
+
+    .fs-text{
+        width:700px;
+        border:2px solid red;
+        height:max-content;
+        &--head{
+            font-size: 40px;
+            margin-bottom: 30px;
+            letter-spacing: 0.2rem;
+        };
+        &--body{
+            font-size: 1.2rem;
+            line-height: 2rem;
+            text-align: justify;
+        }
+    }
+
+}

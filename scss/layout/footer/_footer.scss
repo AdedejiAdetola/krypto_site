@@ -1,0 +1,19 @@
+.footer{
+    background-image: linear-gradient(to top,   $darkBlue );
+
+    .ft__head{
+        text-align: center;
+    }
+    .ft__flex, .ft__socials{
+        display:flex;
+        justify-content: space-around;
+        border: 2px solid red;
+        padding: 20px 0;
+
+        .ft__flex--1, .ft__flex--2{
+            button{
+                @include button;
+            }
+        }
+    }
+}

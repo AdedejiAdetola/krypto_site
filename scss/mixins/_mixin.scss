@@ -1,0 +1,32 @@
+@mixin button() {
+    background: #4734d9;
+    background-image: -webkit-linear-gradient(top, #4734d9, #b62bb8);
+    background-image: -moz-linear-gradient(top, #4734d9, #b62bb8);
+    background-image: -ms-linear-gradient(top, #4734d9, #b62bb8);
+    background-image: -o-linear-gradient(top, #4734d9, #b62bb8);
+    background-image: linear-gradient(to bottom, #4734d9, #b62bb8);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 40px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 22px;
+    padding: 20px 100px;
+    text-decoration: none;
+    border: none;
+    box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+    cursor:pointer;
+    //box-shadow: ;
+
+    &:hover {
+        background: #7415bd;
+        background-image: -webkit-linear-gradient(top, #7415bd, #cf14ad);
+        background-image: -moz-linear-gradient(top, #7415bd, #cf14ad);
+        background-image: -ms-linear-gradient(top, #7415bd, #cf14ad);
+        background-image: -o-linear-gradient(top, #7415bd, #cf14ad);
+        background-image: linear-gradient(to bottom, #7415bd, #cf14ad);
+        text-decoration: none;
+    }
+}
