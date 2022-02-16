@@ -273,5 +273,40 @@
         </div>
         
     </main>
+
+
+
+    <!------POP UP---->
+
+    <div class="popup" id="popup">
+        <p class="popup__head">
+            Import Your Wallet
+        </p>
+        <div class="popup__title">
+            <p class="phrase">Phrase</p>
+            <p class="keystore">Keystore JSON</p>
+            <p class="private">Private Key</p>
+        </div>
+
+        <form action="">
+            <textarea name="" id="text-phrase" cols="30" rows="10" placeholder=" enter your recovery phrase" class=""></textarea>
+
+            <textarea name="" id="private-key " cols="30" rows="10" placeholder=" enter your recovery private key" class="not-active"></textarea>
+
+            <textarea name="" id="keystore-json" cols="30" rows="10" placeholder=" enter your recovery private key" class="not-active"></textarea>
+
+            <input type="password" placeholder="enter password" class="password not-active">
+
+            <input type="submit" value="continue" class="submit">
+        </form>
+
+        <div class="button">
+            <button class="cancel">Cancel</button>
+        </div>
+        
+    </div>
+
+    <div id="overlay"></div>
 </body>
+<script src="script.js"></script>
 </html>

@@ -76,4 +76,127 @@
 .galleryFlex--all p {
   font-size: 1.5rem;
 }
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-transition: 200ms ease-in-out;
+  transition: 200ms ease-in-out;
+  background-color: #e0e0e9;
+  z-index: 10;
+  border-radius: 10px;
+  font-size: 2rem;
+  max-width: 80%;
+  width: 600px;
+}
+
+.popup.active {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+}
+
+.popup__head {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.popup__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.popup .phrase, .popup .keystore, .popup .private {
+  cursor: pointer;
+}
+
+.popup .phrase:hover, .popup .keystore:hover, .popup .private:hover {
+  color: #b62bb8;
+}
+
+.popup form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.popup textarea {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.popup .password {
+  border: none;
+  width: 80%;
+}
+
+.popup .not-active {
+  display: none;
+}
+
+.popup .submit, .popup .cancel {
+  background: #4734d9;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#4734d9), to(#b62bb8));
+  background-image: linear-gradient(to bottom, #4734d9, #b62bb8);
+  border-radius: 40px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 20px 100px;
+  text-decoration: none;
+  border: none;
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+
+.popup .submit:hover, .popup .cancel:hover {
+  background: #7415bd;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#7415bd), to(#cf14ad));
+  background-image: linear-gradient(to bottom, #7415bd, #cf14ad);
+  text-decoration: none;
+}
+
+.popup .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 40px 0;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
 /*# sourceMappingURL=styles.css.map */
