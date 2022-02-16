@@ -41,48 +41,38 @@ const keystore = document.querySelector('.keystore');
 const private = document.querySelector('.private');
 
 
+const textPhrase = document.getElementById('text-phrase');
+
+
+
+const textKeyStore = document.getElementById('keystore-json');
+
+const textPrivate = document.getElementById('private-key');
+
+const inputPassword = document.getElementById('password');
+
 phrase.addEventListener('click', () => {
-    
+    if (textPhrase == null) return
+    textPhrase.classList.remove('not-active');
+    textKeyStore.classList.add('not-active');
+    textPrivate.classList.add('not-active');
+    inputPassword.classList.add('not-active');
+});
 
-    const targetPhrase = document.getElementById('text-phrase');
-
-    const targetKey = document.getElementById('private-key');
-
-    const targetKeyStore = document.getElementById('keystore-json');
-
-    const targetClassP = targetPhrase.classList;
-
-    const targetClassKS = targetKeyStore.classList;
-
-    const targetClassPk = targetKey.classList;
-
-    if (targetClassP == 'not-active') {
-        console.log('omo');
-        targetClassP.remove('not-active');
-        targetClassKS.add('not-active');
-        targetClassPk.add('not-active')
-
-    }
-})
 
 keystore.addEventListener('click', () => {
-    const targetPhrase = document.getElementById('text-phrase');
+    if (textKeyStore == null) return
+    textPhrase.classList.add('not-active');
+    textKeyStore.classList.remove('not-active');
+    textPrivate.classList.add('not-active');
+    inputPassword.classList.remove('not-active');
+});
 
-    const targetKey = document.getElementById('private-key');
-
-    const targetKeyStore = document.getElementById('keystore-json');
-
-    const targetClassP = targetPhrase.classList;
-
-    const targetClassKS = targetKeyStore.classList;
-
-    const targetClassPk = targetKey.classList;
-
-    if (targetClassKS == null) {
-        console.log('omo');
-        targetClassKS.remove('not-active');
-        targetClassP.add('not-active');
-        targetClassPk.add('not-active')
-
-    }
+private.addEventListener('click', () => {
+    if (textPhrase == null) return
+    textPhrase.classList.add('not-active');
+    textKeyStore.classList.add('not-active');
+    textPrivate.classList.remove('not-active');
+    inputPassword.classList.add('not-active');
 })
+
