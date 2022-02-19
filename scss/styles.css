@@ -64,7 +64,7 @@ html {
   font-family: Arial;
   color: #ffffff;
   font-size: 22px;
-  padding: 20px 100px;
+  padding: 15px 70px;
   text-decoration: none;
   border: none;
   box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
@@ -79,6 +79,15 @@ html {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#7415bd), to(#cf14ad));
   background-image: linear-gradient(to bottom, #7415bd, #cf14ad);
   text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .header .text .topic {
+    font-size: 3rem;
+  }
+  .header .text .sub-topic {
+    font-size: 1.5rem;
+  }
 }
 
 .first-section {
@@ -100,39 +109,83 @@ html {
 
 .first-section div {
   color: black;
-  margin-top: 200px;
 }
 
 .first-section .fs-img {
   width: 400px;
   height: 400px;
   border: 2px solid red;
+  margin-top: 200px;
 }
 
 .first-section .fs-text {
   width: 700px;
-  border: 2px solid red;
+  margin-left: 20px;
+  margin-right: 20px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  margin-top: 200px;
 }
 
 .first-section .fs-text--head {
-  font-size: 40px;
+  font-size: 4rem;
   margin-bottom: 30px;
   letter-spacing: 0.2rem;
 }
 
 .first-section .fs-text--body {
-  font-size: 1.2rem;
-  line-height: 2rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   text-align: justify;
+}
+
+.hr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hr hr {
+  width: 15rem;
+  height: 10px;
+  background-color: #9594cf;
+  border-radius: 10px;
+  position: relative;
+  top: -50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .fs-text {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 1150px) {
+  .first-section .fs-text {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .first-section .fs-img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.second-section {
+  margin-bottom: 50px;
 }
 
 .second-section .ss-head {
   text-align: center;
   margin-bottom: 50px;
-  font-size: 30px;
+  font-size: 2.5rem;
   letter-spacing: 0.2rem;
 }
 
@@ -165,23 +218,26 @@ html {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  line-height: 2rem;
-  border: 2px solid blue;
+  line-height: 2.5rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 300px;
   margin-bottom: 50px;
 }
 
+.second-section .card__0--text, .second-section .card__1--text, .second-section .card__2--text {
+  font-size: 1.4rem;
+}
+
 .second-section .card__0--img, .second-section .card__1--img, .second-section .card__2--img {
   height: 200px;
   width: 200px;
   border: 2px solid red;
+  margin-bottom: 20px;
 }
 
 .second-section .ss--button {
   width: 100%;
-  border: 2px solid red;
   text-align: center;
   padding: 20px 0;
 }
@@ -194,7 +250,7 @@ html {
   font-family: Arial;
   color: #ffffff;
   font-size: 22px;
-  padding: 20px 100px;
+  padding: 15px 70px;
   text-decoration: none;
   border: none;
   box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
@@ -213,23 +269,25 @@ html {
 .footer {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#3e3d83));
   background-image: linear-gradient(to top, #3e3d83);
+  font-size: 1.4rem;
+  padding: 20px;
 }
 
 .footer .ft__head {
   text-align: center;
+  margin-bottom: 2.5rem;
 }
 
 .footer .ft__flex, .footer .ft__socials {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  border: 2px solid red;
-  padding: 20px 0;
+  margin-bottom: 2.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.footer .ft__flex .ft__flex--1 button, .footer .ft__flex .ft__flex--2 button, .footer .ft__socials .ft__flex--1 button, .footer .ft__socials .ft__flex--2 button {
+.footer .ft__flex .ft__flex--1 .button, .footer .ft__flex .ft__flex--2 .button, .footer .ft__socials .ft__flex--1 .button, .footer .ft__socials .ft__flex--2 .button {
   background: #4734d9;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#4734d9), to(#b62bb8));
   background-image: linear-gradient(to bottom, #4734d9, #b62bb8);
@@ -237,7 +295,7 @@ html {
   font-family: Arial;
   color: #ffffff;
   font-size: 22px;
-  padding: 20px 100px;
+  padding: 15px 70px;
   text-decoration: none;
   border: none;
   box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
@@ -246,10 +304,33 @@ html {
   cursor: pointer;
 }
 
-.footer .ft__flex .ft__flex--1 button:hover, .footer .ft__flex .ft__flex--2 button:hover, .footer .ft__socials .ft__flex--1 button:hover, .footer .ft__socials .ft__flex--2 button:hover {
+.footer .ft__flex .ft__flex--1 .button:hover, .footer .ft__flex .ft__flex--2 .button:hover, .footer .ft__socials .ft__flex--1 .button:hover, .footer .ft__socials .ft__flex--2 .button:hover {
   background: #7415bd;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#7415bd), to(#cf14ad));
   background-image: linear-gradient(to bottom, #7415bd, #cf14ad);
   text-decoration: none;
+}
+
+.footer .ft__flex .ft__flex--1, .footer .ft__socials .ft__flex--1 {
+  margin-bottom: 1.5rem;
+}
+
+.footer .ft__flex {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer .ft__socials {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .ft__socials--discord {
+  margin-right: 2rem;
+}
+
+.footer .ft__socials--twitter {
+  margin-left: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */

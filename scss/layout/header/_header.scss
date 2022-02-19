@@ -20,6 +20,7 @@
             margin-bottom: 20px;
             letter-spacing: 0.3rem;
             text-transform: uppercase;
+            
         }
 
         .sub-topic{
@@ -33,4 +34,21 @@
             margin-top: 6rem;
         }
     }
+}
+
+
+//responsive
+@media only screen and (max-width:800px) {
+    .header {
+        .text{
+            .topic {
+                font-size: 3rem;
+            }
+
+            .sub-topic{
+                font-size: 1.5rem;
+            }
+        }
+    }
+    
 }

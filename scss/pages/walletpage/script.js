@@ -1,7 +1,7 @@
 //select the buttons
 const openButtons = document.querySelectorAll('.galleryFlex--all');
 
-const closeButton = document.querySelector('.button');
+const closeButton = document.querySelectorAll('.button');
 
 const overlay = document.getElementById('overlay');
 
@@ -14,11 +14,14 @@ openButtons.forEach( button => {
     })
 })
 
-closeButton.addEventListener('click', () => {
-    const popup = document.getElementById('popup');
-    closePopup(popup);
-    console.log(popup)
+closeButton.forEach(button => {
+    button.addEventListener('click', () => {
+        const popup = document.getElementById('popup');
+        closePopup(popup);
+    })
 })
+
+//if input field is not empty, then continue
 
 function openPopup(popup) {
     if (popup == null) return 

@@ -1,19 +1,43 @@
 .footer{
     background-image: linear-gradient(to top,   $darkBlue );
+    font-size: 1.4rem;
+    padding: 20px;
 
     .ft__head{
         text-align: center;
+        margin-bottom: 2.5rem;
     }
     .ft__flex, .ft__socials{
         display:flex;
-        justify-content: space-around;
-        border: 2px solid red;
-        padding: 20px 0;
-
+        //justify-content: space-around;
+        margin-bottom: 2.5rem;
+        //padding: 20px 0;
+        flex-wrap: wrap;
         .ft__flex--1, .ft__flex--2{
             .button{
                 @include button;
             }
         }
+
+        .ft__flex--1 {
+            margin-bottom: 1.5rem;
+        }
     }
+
+    .ft__flex {
+        justify-content: space-around;
+    }
+
+    .ft__socials{
+        justify-content: center;
+        &--discord {
+            margin-right: 2rem;
+        }
+
+        &--twitter {
+            margin-left: 2rem;
+        }
+    }
+
+
 }

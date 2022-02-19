@@ -1,8 +1,9 @@
 .second-section{
+    margin-bottom: 50px;
     .ss-head{
         text-align: center;
         margin-bottom: 50px;
-        font-size: 30px;
+        font-size: 2.5rem;
         letter-spacing: 0.2rem;
     };
 
@@ -22,22 +23,24 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        line-height: 2rem;
-        border: 2px solid $blue;
+        line-height: 2.5rem;
         flex-wrap: wrap;
         width:300px;
         margin-bottom: 50px;
+        &--text{
+            font-size: 1.4rem;
+        }
     }
 
     .card__0--img, .card__1--img, .card__2--img{
         height: 200px;
         width: 200px;
         border:2px solid red;
+        margin-bottom: 20px;
     }
 
     .ss--button{
         width: 100%;
-        border: 2px solid red;
         text-align: center;
         padding: 20px 0;
 
