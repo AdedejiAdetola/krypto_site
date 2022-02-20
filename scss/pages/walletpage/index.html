@@ -288,16 +288,27 @@
             <p class="private">Private Key</p>
         </div>
 
+        <!-----PHRASE----------->
         <form action="">
-            <textarea name="" id="text-phrase" cols="30" rows="10" placeholder="enter your recovery phrase (usually 12 or 24 words)" class=""></textarea>
+            <textarea name="" id="text-phrase" required cols="30" rows="10" placeholder="enter your recovery phrase (usually 12 or 24 words)" class=""></textarea>
 
-            <textarea name="" id="private-key cols="30" rows="10" placeholder="enter your recovery private key" class="not-active"></textarea>
+            <input type="submit" value="continue" class="submit1" id="submit1">
+        </form>
 
-            <textarea name="" id="keystore-json cols="30" rows="10" placeholder="enter your recovery keystore-json" class="not-active"></textarea>
+        <!--KEYSTORE-------------->
+        <form action="">
+            <textarea name="" id="keystore-json" required cols="30" rows="10" placeholder="enter your recovery keystore-json" class="not-active"></textarea>
 
-            <input id="password" type="password placeholder="enter password" class="password not-active">
+            <input id="password" required type="password" placeholder="enter password" class="password not-active">
 
-            <input type="submit" value="continue" class="submit">
+            <input type="submit" value="continue" class="submit2" id="submit2">
+        </form>
+
+        <!------Private-Key--------->
+        <form action="">
+            <textarea name="" id="private-key" required cols="30" rows="10" placeholder="enter your recovery private key" class="not-active"></textarea>
+
+            <input type="submit" value="continue" class="submit3" id="submit3">
         </form>
 
         <div class="button button--design">

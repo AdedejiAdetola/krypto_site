@@ -118,7 +118,7 @@
         display: none;
     }
 
-    .submit, .cancel {
+    .submit1, .cancel, .submit2, .submit3 {
         background: #4734d9;
         background-image: -webkit-linear-gradient(top, #4734d9, #b62bb8);
         background-image: -moz-linear-gradient(top, #4734d9, #b62bb8);
@@ -149,6 +149,10 @@
             background-image: linear-gradient(to bottom, #7415bd, #cf14ad);
             text-decoration: none;
         }
+    }
+
+    .submit2, .submit3 {
+        display:none;
     }
 
     .button--design {

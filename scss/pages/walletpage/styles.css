@@ -155,7 +155,7 @@
   display: none;
 }
 
-.popup .submit, .popup .cancel {
+.popup .submit1, .popup .cancel, .popup .submit2, .popup .submit3 {
   background: #4734d9;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#4734d9), to(#b62bb8));
   background-image: linear-gradient(to bottom, #4734d9, #b62bb8);
@@ -173,11 +173,15 @@
   text-transform: capitalize;
 }
 
-.popup .submit:hover, .popup .cancel:hover {
+.popup .submit1:hover, .popup .cancel:hover, .popup .submit2:hover, .popup .submit3:hover {
   background: #7415bd;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#7415bd), to(#cf14ad));
   background-image: linear-gradient(to bottom, #7415bd, #cf14ad);
   text-decoration: none;
+}
+
+.popup .submit2, .popup .submit3 {
+  display: none;
 }
 
 .popup .button--design {

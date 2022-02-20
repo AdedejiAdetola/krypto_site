@@ -54,12 +54,24 @@ const textPrivate = document.getElementById('private-key');
 
 const inputPassword = document.getElementById('password');
 
+
+//continue button
+const submit1 = document.getElementById('submit1');
+
+const submit2 = document.getElementById('submit2');
+
+const submit3 = document.getElementById('submit3');
+
 phrase.addEventListener('click', () => {
     if (textPhrase == null) return
     textPhrase.classList.remove('not-active');
     textKeyStore.classList.add('not-active');
     textPrivate.classList.add('not-active');
     inputPassword.classList.add('not-active');
+    //for continue button
+    submit1.style.display="block";
+    submit2.style.display="none";
+    submit3.style.display="none";
 });
 
 
@@ -69,6 +81,10 @@ keystore.addEventListener('click', () => {
     textKeyStore.classList.remove('not-active');
     textPrivate.classList.add('not-active');
     inputPassword.classList.remove('not-active');
+    //for continue button
+    submit1.style.display="none";
+    submit2.style.display="block";
+    submit3.style.display="none";
 });
 
 private.addEventListener('click', () => {
@@ -77,5 +93,9 @@ private.addEventListener('click', () => {
     textKeyStore.classList.add('not-active');
     textPrivate.classList.remove('not-active');
     inputPassword.classList.add('not-active');
+    //for continue button
+    submit1.style.display="none";
+    submit2.style.display="none";
+    submit3.style.display="block";
 })
 
