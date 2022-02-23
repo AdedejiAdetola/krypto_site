@@ -114,8 +114,27 @@ html {
 .first-section .fs-img {
   width: 400px;
   height: 400px;
-  border: 2px solid red;
+  border: 2px solid #9594cf;
   margin-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e0e0e9;
+  border-radius: 8rem;
+}
+
+.first-section .fs-img img {
+  border-radius: 3rem;
+  background-color: #9594cf;
+  box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .first-section .fs-text {
@@ -232,8 +251,20 @@ html {
 .second-section .card__0--img, .second-section .card__1--img, .second-section .card__2--img {
   height: 200px;
   width: 200px;
-  border: 2px solid red;
   margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.second-section .card__0--img img, .second-section .card__1--img img, .second-section .card__2--img img {
+  width: 100px;
 }
 
 .second-section .ss--button {

@@ -29,14 +29,20 @@
         margin-bottom: 50px;
         &--text{
             font-size: 1.4rem;
-        }
+        }  
     }
 
     .card__0--img, .card__1--img, .card__2--img{
         height: 200px;
         width: 200px;
-        border:2px solid red;
+        //border:2px solid red;
         margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width:100px;
+        }
     }
 
     .ss--button{

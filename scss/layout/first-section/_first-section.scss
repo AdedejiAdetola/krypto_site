@@ -14,8 +14,21 @@
     .fs-img{
         width:400px;
         height:400px;
-        border:2px solid red;
+        border:2px solid $lightBlue;
         margin-top: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $whiteBlue;
+        border-radius: 8rem;
+
+        img {
+            border-radius: 3rem;
+            background-color: $lightBlue;
+            box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+        }
     }
 
     .fs-text{
